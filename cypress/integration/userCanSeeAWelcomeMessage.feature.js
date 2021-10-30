@@ -5,8 +5,8 @@ describe("user that navigates to the application", ()=>{
  })
 
  it('is expected to see "Hello World!"',()=>{  
-   cy.get('h1').should('contain.text', 'Hello Mars!')
-   cy.get('h2').should('contain.text','Independent free people living Mars')
+   cy.get('h1').should('contain.text', 'Hello Here Is Mars!')
+   cy.get('h2').should('contain.text','We need Independent free mind people')
  })
    
 });
