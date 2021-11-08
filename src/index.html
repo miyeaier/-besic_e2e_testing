@@ -7,7 +7,28 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello Mars!</h1>
-  <h2>Independent free people living Mars</h2>
+  <h1>Hello Here Is Mars!</h1>
+  <h2> We need Independent free mind people </h2>
+  <input type="text" name="firstName">
+  <input type="text" name="email">
+  <input type="password" name="password">
+  <input type="submit" value="Register" id="submit-button">
+  <div   id="confirmation-message"></div>
+
+  <script>
+    const emailInput = document.querySelector("input[name=email]");
+    const button = document.getElementById("submit-button");
+    const messageElement = document.getElementById('confirmation-message');
+    button.addEventListener('click', () => {
+      if (emailInput.value === ''){
+        messageElement.innerText =
+        "HEY,YOU NEED TO GIVE US YOU EMAIL ADDRESS!";
+      } else {
+        messageElement.innerText = 'Welcome to Mars,Thank you for signing up!'
+      }
+     
+    });
+
+  </script>
 </body>
 </html>
